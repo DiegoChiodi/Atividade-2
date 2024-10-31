@@ -1,0 +1,12 @@
+	 Entrando em um computador diferente
+
+Depois de criar uma pasta e adicionar um arquivo txt lá dentro,
+clickar em open git bash here para abrir uma janela, e digitar
+git config --global user.name "Leonardo Comelli"
+git config --global user.email leonardo@software-ltda.com.br
+
+	Branches
+
+Branches - É uma máquina do tempo para commits.
+
+Commits - São as linhas do tempo do seu código.
