@@ -10,3 +10,115 @@ git config --global user.email leonardo@software-ltda.com.br
 Branches - É uma máquina do tempo para commits.
 
 Commits - São as linhas do tempo do seu código.
+
+	Como fiz para fazer a atividade
+
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade
+$ git init
+Initialized empty Git repository in C:/Users/Aluno/Desktop/Atividad
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (master)
+$ git add .
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (master)
+$ git commit -m "first commit"
+[master (root-commit) e060ec1] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 atividade.txt
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (master)
+$ git branch -M main
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (main)
+$ git branch topico-2
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (main)
+$ git checkout topico-2
+Switched to branch 'topico-2'
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git commit -m "Mudanças"
+On branch topico-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+        modified:   atividade.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git add .
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git commit -m "Mudanças"
+[topico-2 dc0850f] Mudanças
+ 1 file changed, 12 insertions(+)
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git checkout main
+Switched to branch 'main'
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (main)
+$ git checkout topico-2
+Switched to branch 'topico-2'
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git checkout main
+Switched to branch 'main'
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (main)
+$ git remote add origin https://github.com/DiegoChiodi/Atividade-2.
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DiegoChiodi/Atividade-2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (main)
+$ git checkout topico-2
+Switched to branch 'topico-2'
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git add .
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git commit -m "topico-2"
+On branch topico-2
+nothing to commit, working tree clean
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git push topico-2
+fatal: 'topico-2' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git push -u origin topico-2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 504 bytes | 504.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'topico-2' on GitHub by visiting:
+remote:      https://github.com/DiegoChiodi/Atividade-2/pull/new/topico-2
+remote:
+To https://github.com/DiegoChiodi/Atividade-2.git
+ * [new branch]      topico-2 -> topico-2
+branch 'topico-2' set up to track 'origin/topico-2'.
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git branch topico-3
+
+Aluno@INFO1MC03 MINGW64 ~/Desktop/Atividade (topico-2)
+$ git checkout topico-3
+Switched to branch 'topico-3'
